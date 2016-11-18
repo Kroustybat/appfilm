@@ -1,0 +1,32 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Films</h1>
+
+<table id="films-index">
+  <thead>
+    <tr>
+      <th>Nom</th>
+      <th>Realisateur</th>
+      <th>Date</th>
+      <th colspan="4"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @films.each do |film| %>
+      <tr>
+        <td><%= film.nom %></td>
+        <td><%= film.realisateur %></td>
+        <td><%= film.date %></td>
+        <td><%= link_to 'Show', film %></td>
+        <td><%= link_to 'Edit', edit_film_path(film) %></td>
+        <td><%= link_to 'Destroy', film, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= check_box_tag :checked, nil, film.checked, :'data-id' => film.id %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Film', new_film_path %>
