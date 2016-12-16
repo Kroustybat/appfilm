@@ -1,6 +1,10 @@
-<p id="notice"><%= notice %></p>
 
+<div class="enter">
 <h1>Films</h1>
+<p>Entrez vos films à voir pour ne pas les oublier</p>
+</div>
+
+<div class="table">
 
 <table id="films-index">
   <thead>
@@ -8,7 +12,6 @@
       <th>Nom</th>
       <th>Realisateur</th>
       <th>Date</th>
-      <th colspan="4"></th>
     </tr>
   </thead>
 
@@ -26,7 +29,8 @@
     <% end %>
   </tbody>
 </table>
-
-<br>
+</br>
 
 <%= link_to 'New Film', new_film_path %>
+
+</div>

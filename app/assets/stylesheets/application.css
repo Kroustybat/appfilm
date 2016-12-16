@@ -13,3 +13,164 @@
  *= require_tree .
  *= require_self
  */
+
+/* // CSS qui marche vite fais quand ya pas le tableau bootstrap */
+* {
+	//border:1px solid white; /*c'est juste pour taffer */
+	font-family: "lato"; 
+	font-weight: lighter;
+	//cursor: pointer;
+}
+
+body {
+	//background: #7AE8DF;
+color:white;
+//background: linear-gradient(45deg, red, blue);	
+background-size:auto auto;
+background-attachment: fixed;
+height:100%;
+background-image: url("background.png");
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ background-position: center; 
+
+
+
+}
+.enter {
+	text-align: center;
+	font-family: "lato";
+}
+
+thead {
+ 	margin-right: 100%;
+
+}
+
+.table {
+	font-family: "lato"; 
+	text-align: left;
+	width: 70%;
+	margin: auto;
+	border-radius: 8px;
+	border:3px solid;
+	background-color: rgba(255, 255, 255, 0.6); //changer les valeurs pour la couleur + opacité 
+	border-collapse: collapse;
+	table-layout: fixed;
+	column-width: auto;
+
+	}
+
+table#films-index {
+	margin:auto;
+	//border-left-style: groove;
+	//border-left: 1px solid;
+	//border-right: 1px solid;
+	color: black;
+}
+
+th {
+font-weight: bold;
+
+}
+
+table td + td {
+	
+	color: black;
+}
+
+table th + th {
+	color: black;
+}
+
+
+.container { //ici pour le log in 
+
+	font-family: "lato"; 
+	text-align: left;
+	width: 70%;
+	margin: auto;
+	border-radius: 8px;
+	border:3px solid;
+	background-color: rgba(255, 255, 255, 0.3); //changer les valeurs pour la couleur + opacité 
+	border-collapse: collapse;
+	table-layout: fixed;
+	column-width: auto;
+	margin-top: 130px; 
+
+
+}
+
+.new_user {
+
+margin: 60px 60px;
+text-align: center;
+font-family: "lato"; 
+padding-left: 40px; 
+
+}
+
+
+h2, h1 {
+	font-family: "lato";
+	font-style: lighter;
+	text-align: center;
+}
+
+.text-edit {
+	font-style: lighter; 
+	font-family:"lato";
+	padding-left: 35%;
+}
+
+.text-edit strong {
+	font-weight: bold;
+}
+
+.field , .actions {
+	font-style: lighter; 
+	font-family: "lato"; 
+	padding-left: 41.2%;
+	width: 60px;
+	
+
+}
+
+#notice {
+	font-style: bolder; 
+	font-family: "lato"; 
+}
+ 
+a {
+	text-decoration: none;
+	font-weight: lighter;
+	color:black;
+	font-style: lighter; 
+	font-family: "lato";
+}
+
+a:hover {
+	text-decoration: none;
+
+	font-weight: bolder;
+}
+
+.container{
+
+text-align: left;
+
+}
+
+.edit_user {
+
+	text-align: left;
+}
+
+.enter p {
+	text-align: center;
+}
+
+.footer{
+	font-family: "lato"; 
+}
+
